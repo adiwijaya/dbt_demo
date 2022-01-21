@@ -1,0 +1,9 @@
+dbt_demo:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: "{{ var('project_id') }}"
+      priority: batch
+      schema: "dev_{{ var('user_name') }}"
