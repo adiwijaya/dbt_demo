@@ -38,11 +38,12 @@ steps:
   id: dbt CI testing
   entrypoint: bash
   env:
-  - 'USER_NAME="${BUILD_ID}_${_USER_NAME}"'
+  - 'BUILD_ID=$BUILD_ID'
   args:
   - -c
   - |
-    sh run_unit_tests.sh
+    dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '$BUILD_ID'}' --profiles-dir .dbt 
+    dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '$BUILD_ID'}' --profiles-dir .dbt
 
 options:
   logging: CLOUD_LOGGING_ONLY

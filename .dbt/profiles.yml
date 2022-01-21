@@ -7,3 +7,12 @@ dbt_demo:
       project: "{{ var('project_id') }}"
       priority: batch
       schema: "dev_{{ var('user_name') }}"
+  target: ci
+  outputs:
+    ci:
+      type: bigquery
+      method: oauth
+      project: "{{ var('project_id') }}"
+      priority: batch
+      schema: "ci_{{ var('build_id') }}"
+      impersonate_service_account: sa-dbt@pso-dbt-airflow-demo.iam.gserviceaccount.com
