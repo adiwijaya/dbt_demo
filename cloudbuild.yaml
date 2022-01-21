@@ -17,7 +17,7 @@ steps:
   - '-c'
   - |
    docker pull gcr.io/$PROJECT_ID/dbt-demo:latest || exit 0
-   
+
 - name: gcr.io/cloud-builders/docker
   id: Build Airflow DAGs Builder
   args: [
@@ -41,3 +41,6 @@ steps:
   - -c
   - |
     sh run_unit_tests.sh
+
+options:
+  logging: CLOUD_LOGGING_ONLY
