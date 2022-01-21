@@ -22,7 +22,7 @@ steps:
   id: Build Airflow DAGs Builder
   args: [
       'build',
-      '-t', 'gcr.io/$PROJECT_ID/dbt-builder',
+      '-t', 'gcr.io/$PROJECT_ID/dbt-demo',
       '--cache-from', 'gcr.io/$PROJECT_ID/dbt-demo:latest',
       './'
     ]
@@ -37,10 +37,13 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/dbt-demo'
   id: dbt CI testing
   entrypoint: bash
+  env:
+  - 'BUILD_ID=$BUILD_ID'
   args:
   - -c
   - |
-    sh run_unit_tests.sh
+    dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt 
+    dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt
 
 options:
   logging: CLOUD_LOGGING_ONLY
