@@ -37,10 +37,12 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/dbt-demo'
   id: dbt CI testing
   entrypoint: bash
+  env:
+  - 'USER_NAME="${BUILD_ID}_${_USER_NAME}"'
   args:
   - -c
   - |
-    sh run_unit_tests.sh ||
+    sh run_unit_tests.sh
 
 options:
   logging: CLOUD_LOGGING_ONLY
