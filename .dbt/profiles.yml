@@ -7,8 +7,7 @@ dbt_demo:
       project: "{{ var('project_id') }}"
       priority: batch
       schema: "dev_{{ var('user_name') }}"
-  target: ci
-  outputs:
+
     ci:
       type: bigquery
       method: oauth

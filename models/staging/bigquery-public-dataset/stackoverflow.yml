@@ -1,0 +1,13 @@
+# Copyright 2021 Google LLC. This software is provided as-is, without warranty or
+# representation for any use or purpose. Your use of it is subject to your agreement
+# with Google.
+
+version: 2
+
+sources:
+  - name: bigquery_public_data
+    database: bigquery-public-data
+    schema: stackoverflow
+    tables:
+      - name: stackoverflow_posts
+      - name: users
