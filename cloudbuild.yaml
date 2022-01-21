@@ -37,13 +37,11 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/dbt-demo'
   id: dbt CI testing
   entrypoint: bash
-  env:
-  - 'BUILD_ID=${BUILD_ID//-/_}'
   args:
   - -c
   - |
-    dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '$BUILD_ID'}' --profiles-dir .dbt 
-    dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '$BUILD_ID'}' --profiles-dir .dbt
+    dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt 
+    dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt
 
 options:
   logging: CLOUD_LOGGING_ONLY
