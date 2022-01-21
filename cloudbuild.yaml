@@ -38,11 +38,10 @@ steps:
   id: dbt CI testing
   entrypoint: bash
   env:
-  - 'BUILD_ID=$BUILD_ID'
+  - 'BUILD_ID=${BUILD_ID//-/_}'
   args:
   - -c
   - |
-    export BUILD_ID=${BUILD_ID//-/_}
     dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '$BUILD_ID'}' --profiles-dir .dbt 
     dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '$BUILD_ID'}' --profiles-dir .dbt
 
