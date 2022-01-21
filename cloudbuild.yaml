@@ -37,6 +37,8 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/dbt-demo'
   id: dbt CI testing
   entrypoint: bash
+  env:
+  - 'BUILD_ID=$BUILD_ID'
   args:
   - -c
   - |
