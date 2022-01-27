@@ -11,16 +11,16 @@ RUN apt-get update -y && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Install data build tool
-RUN pip install -U pip
-RUN pip install -r requirements.txt
+# Copy files to the image
+COPY . $DBT_DIR
 
 # Set working directory
 ENV DBT_DIR /dbt/
 WORKDIR $DBT_DIR
 
-# Copy files to the image
-COPY . $DBT_DIR
+# Install data build tool
+RUN pip install -U pip
+RUN pip install -r requirements.txt
 
 # Run dbt
 ENTRYPOINT ["dbt"]
