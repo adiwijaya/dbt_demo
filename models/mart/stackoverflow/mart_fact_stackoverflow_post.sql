@@ -5,7 +5,7 @@ SELECT
     FARM_FINGERPRINT(
         CONCAT(
             CAST(stackoverflow_posts_id AS STRING),
-            CAST(last_edit_date AS STRING)
+            CAST(COALESCE(last_edit_date, creation_date) AS STRING)
         )
     ) AS fact_stackoverflow_post_id
 FROM
