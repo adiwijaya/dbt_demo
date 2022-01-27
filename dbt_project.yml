@@ -31,16 +31,58 @@ models:
     dbt_demo:
         staging:
             schema: staging
-            materialized: table
-        intermediate:
-            schema: intermediate
             materialized: view
+            +tags: 
+              - "daily"
+            +labels:
+              env: "{{ target.name }}"
+              schema: staging
+              team: de
+              scope: private
         mart:
             schema: mart
             materialized: table
+            +tags: 
+              - "daily"
+            +labels:
+              env: "{{ target.name }}"
+              schema: mart
+              team: da
+              scope: public
+            stackoverflow:
+                schema: mart_stackoverflow
+                +labels:
+                  schema: mart_stackoverflow
+                  env: "{{ target.name }}"
+                  team: da
+                  scope: public
+        report:
+            schema: report
+            materialized: table
+            +tags: 
+              - "daily"
+            +labels:
+              env: "{{ target.name }}"
+              schema: report
+              team: da
+              scope: public
+            stackoverflow:
+                schema: report_stackoverflow
+                +labels:
+                  schema: report_stackoverflow
+                  env: "{{ target.name }}"
+                  team: da
+                  scope: public
         sandbox:
             schema: sandbox
             materialized: view
+            +tags: 
+              - "daily"
+            +labels:
+              env: "{{ target.name }}"
+              schema: sandbox
+              team: da
+              scope: public
     +persist_docs:
         relation: true 
         columns: true

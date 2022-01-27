@@ -13,7 +13,7 @@ RUN apt-get update -y && \
 
 # Install data build tool
 RUN pip install -U pip
-RUN pip install dbt-bigquery==1.0.0
+RUN pip install -r requirements.txt
 
 # Set working directory
 ENV DBT_DIR /dbt/

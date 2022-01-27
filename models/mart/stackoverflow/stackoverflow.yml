@@ -1,0 +1,17 @@
+# Copyright 2021 Google LLC. This software is provided as-is, without warranty or
+# representation for any use or purpose. Your use of it is subject to your agreement
+# with Google.
+
+version: 2
+
+models:
+    - name: mart_fact_stackoverflow_post
+      description: "Stackoverflow post fact table"
+      columns:
+        - name: fact_stackoverflow_post_id
+          tests:
+            - unique
+            - not_null
+        - name: stackoverflow_posts_id
+        - name: last_edit_date
+        - name: owner_user_id

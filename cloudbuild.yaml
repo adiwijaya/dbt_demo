@@ -42,6 +42,7 @@ steps:
   args:
   - -c
   - |
+    sqlfluff lint models/report/
     dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
     dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
 
