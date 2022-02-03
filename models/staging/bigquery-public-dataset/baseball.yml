@@ -5,7 +5,7 @@
 version: 2
 
 sources:
-  - name: bigquery_public_data
+  - name: bigquery_public_data_baseball
     database: bigquery-public-data
     schema: baseball
     tables:
