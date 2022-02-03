@@ -1,0 +1,970 @@
+{
+  "cov_type": "doc",
+  "covered": 0,
+  "total": 143,
+  "coverage": 0.0,
+  "tables": [
+    {
+      "name": "stackoverflow.users",
+      "covered": 0,
+      "total": 13,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "about_me",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "age",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "creation_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_access_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "location",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "reputation",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "up_votes",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "down_votes",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "views",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "profile_image_url",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "website_url",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "stackoverflow.stackoverflow_posts",
+      "covered": 0,
+      "total": 20,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "title",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "body",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "accepted_answer_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "answer_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "comment_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "community_owned_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "creation_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "favorite_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_activity_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_edit_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_editor_display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_editor_user_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_user_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "parent_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "post_type_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "score",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "view_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "baseball.schedules",
+      "covered": 0,
+      "total": 16,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "gameid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "gamenumber",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "seasonid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "year",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "type",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "daynight",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "duration",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "duration_minutes",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "hometeamid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "hometeamname",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "awayteamid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "awayteamname",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "starttime",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "attendance",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "created",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "static_source.stackoverflow_posts_partitioned",
+      "covered": 0,
+      "total": 20,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "title",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "body",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "accepted_answer_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "answer_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "comment_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "community_owned_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "creation_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "favorite_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_activity_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_edit_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_editor_display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_editor_user_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_user_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "parent_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "post_type_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "score",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "view_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "static_source.dim_table_1",
+      "covered": 0,
+      "total": 3,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "value",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "date_time",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "static_source.dim_table_2",
+      "covered": 0,
+      "total": 2,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "value",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_admin_report_stackoverflow.report_stackoverflow_latest_post",
+      "covered": 0,
+      "total": 2,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "body",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_edit_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_admin_staging.stg_stackoverflow_users_cols_renamed",
+      "covered": 0,
+      "total": 13,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "stackoverflow_posts_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "about_me",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "age",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "creation_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_access_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "location",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "reputation",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "up_votes",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "down_votes",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "views",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "profile_image_url",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "website_url",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_admin_staging.stg_static_source_stackoverflow_posts_partitioned_cols_renamed",
+      "covered": 0,
+      "total": 20,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "stackoverflow_posts_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "title",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "body",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "accepted_answer_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "answer_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "comment_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "community_owned_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "creation_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "favorite_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_activity_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_edit_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_editor_display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_editor_user_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_display_name",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_user_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "parent_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "post_type_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "score",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "view_count",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_admin_staging.stg_baseball_schedules_cols_renamed",
+      "covered": 0,
+      "total": 16,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "gameid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "gamenumber",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "seasonid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "year",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "type",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "daynight",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "duration",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "duration_minutes",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "hometeamid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "hometeamname",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "awayteamid",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "awayteamname",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "starttime",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "attendance",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "created",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_admin_mart_stackoverflow.mart_fact_stackoverflow_post",
+      "covered": 0,
+      "total": 4,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "stackoverflow_posts_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_edit_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_user_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "fact_stackoverflow_post_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_admin_mart_stackoverflow.ss_mart_dim_stackoverflow_post",
+      "covered": 0,
+      "total": 9,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "stackoverflow_posts_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "title",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "body",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "creation_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_edit_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_scd_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_updated_at",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_valid_from",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_valid_to",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_admin_mart_stackoverflow.mart_dim_stackoverflow_post",
+      "covered": 0,
+      "total": 5,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "stackoverflow_posts_id",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "title",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "body",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "creation_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_edit_date",
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    }
+  ]
+}
