@@ -18,9 +18,9 @@ export DBT_VARS="{
 
 sqlfluff lint models/report/
 
+dbt deps --profiles-dir ${DBT_PROFILES_DIR} --vars "${DBT_VARS}" --target dev 
 # dbt --log-format ${DBT_LOG_FORMAT} snapshot --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev
-dbt --log-format ${DBT_LOG_FORMAT} run  --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev
-dbt --log-format ${DBT_LOG_FORMAT} test --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev 
+# dbt --log-format ${DBT_LOG_FORMAT} run  --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1 $2
+# dbt --log-format ${DBT_LOG_FORMAT} test --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1
 
-
-python3 auto_delete_datasets.py
+dbt --log-format ${DBT_LOG_FORMAT} build  --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1 $2
