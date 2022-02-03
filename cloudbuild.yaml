@@ -47,7 +47,7 @@ steps:
     dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
     dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
     dbt docs generate --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
-    dbt-coverage compute doc --cov-fail-under 0.1
+    dbt-coverage compute doc --cov-fail-under 0.2
 
 options:
   logging: CLOUD_LOGGING_ONLY
