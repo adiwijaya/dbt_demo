@@ -15,6 +15,3 @@ dbt_demo:
       priority: batch
       schema: "ci_{{ var('build_id') }}"
       impersonate_service_account: sa-dbt@pso-dbt-airflow-demo.iam.gserviceaccount.com
-
-password=bla
-username=bla

@@ -16,11 +16,18 @@ export DBT_VARS="{
   'forward_prediction_end_month': '2018-08'
   }"
 
+echo "SQL Linting using SQL Fluff"
 sqlfluff lint models/report/
 
-dbt deps --profiles-dir ${DBT_PROFILES_DIR} --vars "${DBT_VARS}" --target dev 
-# dbt --log-format ${DBT_LOG_FORMAT} snapshot --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev
-# dbt --log-format ${DBT_LOG_FORMAT} run  --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1 $2
-# dbt --log-format ${DBT_LOG_FORMAT} test --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1
+echo "Secrets Scanner using Git Hound"
+git hound sniff
 
-dbt --log-format ${DBT_LOG_FORMAT} build  --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1 $2
+echo "dbt unit tests"
+dbt deps --profiles-dir ${DBT_PROFILES_DIR} --vars "${DBT_VARS}" --target dev 
+dbt --log-format ${DBT_LOG_FORMAT} snapshot --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev
+dbt --log-format ${DBT_LOG_FORMAT} run  --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1 $2
+dbt --log-format ${DBT_LOG_FORMAT} test --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1
+dbt --log-format ${DBT_LOG_FORMAT} docs generate --vars "${DBT_VARS}" --profiles-dir ${DBT_PROFILES_DIR} --target dev $1
+
+echo "Test coverage using dbt-coverage"
+dbt-coverage compute doc --cov-fail-under 0.1
