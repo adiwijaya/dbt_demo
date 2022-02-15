@@ -22,5 +22,7 @@ COPY . $DBT_DIR
 RUN pip install -U pip
 RUN pip install -r requirements.txt
 
+RUN ["chmod", "+x", "utils/run_unit_tests.sh"]
+
 # Run dbt
 ENTRYPOINT ["dbt"]

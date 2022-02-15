@@ -1,0 +1,24 @@
+# Copyright 2021 Google LLC. This software is provided as-is, without warranty or
+# representation for any use or purpose. Your use of it is subject to your agreement
+# with Google.
+
+version: 2
+
+models:
+    - name: report_stackoverflow_latest_post
+    - name: report_stackoverflow_latest_post_2
+      description: "Stackoverflow post fact table 2"
+      columns:
+        - name: body
+          description: Dummy description
+        - name: creation_date
+          description: Dummy description
+        - name: last_edit_date
+          description: Dummy description
+        - name: title
+          description: Dummy description
+        - name: stackoverflow_posts_id
+          description: Dummy description
+        - name: fact_last_edit_date
+          description: Dummy description
+

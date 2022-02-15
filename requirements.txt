@@ -1,3 +1,4 @@
 dbt-bigquery
 sqlfluff
 dbt-coverage
+truffleHog

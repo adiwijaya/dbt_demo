@@ -39,15 +39,13 @@ steps:
   entrypoint: bash
   env:
   - 'BUILD_ID=$BUILD_ID'
+  - 'DBT_TARGET=ci'
+  - 'USER_NAME=ci_aw'
+  - 'DBT_COVERAGE_LIMIT=0.5'
   args:
   - -c
   - |
-    sqlfluff lint models/report/
-    dbt deps --profiles-dir .dbt --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --target ci 
-    dbt run  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
-    dbt test  --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
-    dbt docs generate --vars '{"project_id": '$PROJECT_ID',"build_id": '${BUILD_ID//-/_}'}' --profiles-dir .dbt --target ci
-    dbt-coverage compute doc --cov-fail-under 0.2
+    ./utils/run_unit_tests.sh
 
 options:
   logging: CLOUD_LOGGING_ONLY

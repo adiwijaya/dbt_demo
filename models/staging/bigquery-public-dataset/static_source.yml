@@ -10,5 +10,39 @@ sources:
     schema: static_source
     tables:
       - name: dim_table_1
+        description: >
+            Dim table 1 description
+        columns:
+          - name: id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+          - name: value
+            description: Value col
+          - name: date_time
+            description: date time col
       - name: dim_table_2
+        description: >
+            Dim table 2 description
+        columns:
+          - name: id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+          - name: value
+            description: Value col
       - name: stackoverflow_posts_partitioned
+        description: >
+            stackoverflow_posts_partitioned
+        columns:
+          - name: id
+            description: dummy col desc
+            tests:
+              - unique
+              - not_null
+          - name: title
+            description: dummy col desc
+          - name: body
+            description: dummy col desc      
